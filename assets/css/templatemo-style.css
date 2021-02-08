@@ -50,15 +50,11 @@ h4 {
   font-family:Khula;
   font-size:30em;
   text-align:center;
-  height:500px;
+  height:auto;
   width:auto;
   display:block;
   position:relative;
   color:white;
-  top:0;
-  bottom:0;
-  left:0;
-  right:0;
   margin:auto;
 }
 .console-underscore {
