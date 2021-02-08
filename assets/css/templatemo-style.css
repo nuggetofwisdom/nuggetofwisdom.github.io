@@ -122,7 +122,7 @@ html {
 
 .main-nav li:hover a,
 .main-nav li.active a {
-    background: #ffffff;
+    background: #0A0A0A;
     color: #36454f;
 }
 
@@ -587,7 +587,7 @@ figure.snip1321 i {
   color: #fff;
 }
 figure.snip1321:after {
-  background-color: #ffffff;
+  background-color: #0A0A0A;
   position: absolute;
   content: "";
   display: block;
