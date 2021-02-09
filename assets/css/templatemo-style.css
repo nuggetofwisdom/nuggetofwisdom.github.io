@@ -345,6 +345,8 @@ html {
     letter-spacing: 0.5px;
     text-transform: uppercase;
     transition: all 0.5s;
+    -ms-transform: translateX(133.170731707%);
+    transform: translateX(133.170731707%);
 }
 
 .white-button a:hover {
