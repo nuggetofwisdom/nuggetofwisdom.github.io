@@ -334,7 +334,7 @@ html {
 /* Buttons */
 
 .white-button a {
-    align-items: center;
+    align-items: inherit;
     justify-content: center;
     display: inline-block;
     padding: 12px 20px;
@@ -345,8 +345,6 @@ html {
     letter-spacing: 0.5px;
     text-transform: uppercase;
     transition: all 0.5s;
-    -ms-transform: translateX(133.170731707%);
-    transform: translateX(133.170731707%);
 }
 
 .white-button a:hover {
