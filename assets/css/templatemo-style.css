@@ -48,11 +48,11 @@ h4 {
 .console-container {
  
   font-family:Khula;
-  font-size:40px;
+  font-size:80px;
   text-align:center;
   height:auto;
   width:auto;
-  display:block;
+  display:inline;
   position:relative;
   color:white;
   margin:auto;
