@@ -346,6 +346,10 @@ html {
     transition: all 0.5s;
 }
 
+.white-button {
+    text-align: center;
+}
+
 .white-button a:hover {
     background-color: #2c3840;
     color: #fff;
