@@ -334,8 +334,7 @@ html {
 /* Buttons */
 
 .white-button a {
-    align-items: inherit;
-    justify-content: center;
+    text-align: center;
     display: inline-block;
     padding: 12px 20px;
     background-color: #fff;
