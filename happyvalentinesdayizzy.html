@@ -122,6 +122,32 @@
 		 top: 0.08em;
 		 z-index: -1;
 	}
+	 .whale-container {
+		 position: relative;
+		 margin: 0 20vw;
+		 margin-top: 35vh;
+		 margin-left: 345px;
+		 margin-right: 0;
+	}
+	 @media screen and (max-width: 400px) {
+		 .whale-container {
+			 margin-top: 55vw;
+		}
+		h1, h2 {
+		    font-size: 10px;
+		    width: 100%;
+		}
+		.v-t .v-tc {
+			width: 100%;
+		}
+		span {
+			font-size: 10px;
+		}
+	}
+	 .whale {
+		 transform: scaleX(-1);
+		 margin-left: calc(50vw - 150px);
+	}
 	@media screen and (min-width: 880px) {
 		h1 {
 			font-size: 30px;
@@ -130,22 +156,6 @@
 		span {
 			font-size: 94px;
 		}
-	}
-	 .whale-container {
-		 position: relative;
-		 margin: 0 20vw;
-		 margin-top: 35vh;
-		 margin-left: 375px;
-		 margin-right: 0;
-	}
-	 @media screen and (max-width: 400px) {
-		 .whale-container {
-			 margin-top: 55vw;
-		}
-	}
-	 .whale {
-		 transform: scaleX(-1);
-		 margin-left: calc(50vw - 150px);
 	}
 	 .whale div {
 		 position: absolute;
