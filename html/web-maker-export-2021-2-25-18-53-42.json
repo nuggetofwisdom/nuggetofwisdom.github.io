@@ -1,0 +1,27 @@
+[
+  {
+    "title": "Untitled 25-2-18:50",
+    "html": "<div class=\"wrapper\">\n  <img class=\"nugget\" src=\"https://img.pngio.com/chicken-nugget-png-clipart-images-gallery-for-free-download-transparent-chicken-nugget-352_352.png\">\n  <div class=\"words\">\n    <span>Nugget</span>\n    <span>Of</span>\n    <span>Wisdom</span>\n  </div>\n  <div class=\"help\">\n    (hover/tap the chikin nuggie)\n  </div>\n</div>",
+    "css": "  *, *::before, *::after {\n    box-sizing: border-box;\n  }\n\n  html, body {\n    height: 100%;\n  }\n\n  body {\n    display: grid;\n    align-items: center;\n    justify-items: center;\n    margin: 0;\n    font: 1.5rem/1 'Roboto', sans-serif;\n    text-align: center;\n  }\n\n  .wrapper {\n    padding: 25px;\n  }\n\n  .nugget {\n    width: 150px;\n  }\n\n  .nugget:hover {\n    animation: rotate 1.5s linear infinite;\n  }\n\n  @keyframes rotate {\n    to {\n      transform: rotate(1turn);\n    }\n  }\n\n  .words {\n    margin: 20px 0;\n    font-family: 'Passion One', cursive;\n    font-size: 5rem;\n    text-transform: uppercase;\n  }\n\n  .words span {\n    text-shadow: 5px 5px 0 #ccc;\n  }\n\n  .nugget:hover ~ .words span {\n    animation-name: pop-word;\n    animation-duration: 0.5s;\n    animation-fill-mode: forwards;\n  }\n\n  @keyframes pop-word {\n    to {\n      text-shadow:\n        5px 5px 0 yellow,\n        10px 10px 0 orange,\n        15px 15px 0 red,\n        20px 20px 0 brown;\n    }\n  }\n\n  .words span:nth-child(2) { animation-delay: 0.5s; }\n  .words span:nth-child(3) { animation-delay: 1s; }\n  .words span:nth-child(4) { animation-delay: 1.5s; }\n  .words span:nth-child(5) { animation-delay: 2s; }\n\n  .help {\n    color: #999;\n  }\n\n  /* cluck cluck font sizes bawk bagawk smaller screens */\n  @media (max-width: 620px) {\n    body {\n      font-size: 1.25rem;\n    }\n\n    .words {\n      font-size: 3rem;\n    }\n  }",
+    "js": "",
+    "externalLibs": {
+      "js": "",
+      "css": ""
+    },
+    "layoutMode": 1,
+    "htmlMode": "html",
+    "cssMode": "css",
+    "jsMode": "js",
+    "id": "item-NhiSN2MFco",
+    "updatedOn": 1614297064554,
+    "sizes": [
+      "calc(33.33% - 3px)",
+      "calc(33.33% - 6px)",
+      "calc(33.33% - 3px)"
+    ],
+    "mainSizes": [
+      50,
+      50
+    ]
+  }
+]
