@@ -35,7 +35,8 @@ jQuery(document).ready(function($)
             this.echo('===========================\n');
             this.echo('> [[b;#44D544;]skills]');
             this.echo('> [[b;#44D544;]portfolio]');
-            this.echo('> [[b;#44D544;]links]');
+            this.echo('> [[b;#44D544;]github]');
+            this.echo('> [[b;#44D544;]contact]');
             this.echo('> echo ----------- ' + task[arr[0]]);
             this.echo('> pwd ------------ ' + task[arr[1]]);
             this.echo('> ls ------------- ' + task[arr[2]]);
