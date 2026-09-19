@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mission Statement</title>
+    <style>
+      :root {
+        --page-bg: #d9d9d9;
+        --panel-bg: #f1f1f1;
+        --border: rgba(0, 0, 0, 0.25);
+        --text: #1f1f1f;
+        --blue: #0d7ec2;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        background: var(--page-bg);
+        color: var(--text);
+        font-family: Georgia, "Times New Roman", serif;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 30px 0;
+      }
+
+      .page {
+        width: min(94vw, 1180px);
+        min-height: 820px;
+        background: var(--panel-bg);
+        border: 1px solid var(--border);
+        padding: 42px 80px 32px;
+        text-align: center;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: clamp(2.2rem, 3.1vw, 4rem);
+        font-weight: 700;
+        letter-spacing: 0.02em;
+        line-height: 1.1;
+      }
+
+      .subtitle {
+        margin-top: 16px;
+        padding-bottom: 12px;
+        border-bottom: 2px solid var(--blue);
+        display: inline-block;
+        min-width: 520px;
+        font-size: clamp(1rem, 1.3vw, 1.7rem);
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: var(--blue);
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: 700;
+      }
+
+      .content {
+        max-width: 760px;
+        margin: 28px auto 0;
+        text-align: left;
+      }
+
+      .lead {
+        margin: 0 0 18px;
+        font-size: clamp(1.1rem, 1.5vw, 2rem);
+        line-height: 1.45;
+        font-weight: 400;
+      }
+
+      .italic {
+        font-style: italic;
+        font-size: clamp(1.2rem, 1.8vw, 2rem);
+        margin: 18px 0 10px;
+      }
+
+      ol {
+        margin: 0;
+        padding-left: 34px;
+        list-style: decimal;
+      }
+
+      li {
+        margin: 0 0 12px;
+        font-size: clamp(1.1rem, 1.5vw, 1.8rem);
+        line-height: 1.5;
+        padding-left: 8px;
+      }
+
+      .byui-logo {
+        display: block;
+        width: min(240px, 50vw);
+        margin: 26px auto 0;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="page">
+      <h1>MISSION STATEMENT</h1>
+      <div class="subtitle">Brigham Young University-Idaho</div>
+
+      <div class="content">
+        <p class="lead">
+          Brigham Young University-Idaho was founded and is supported and guided by
+          The Church of Jesus Christ of Latter-day Saints. Its mission is to develop
+          disciples of Jesus Christ who are leaders in their homes, the Church, and
+          their communities.
+        </p>
+
+        <p class="italic">The university does this by:</p>
+
+        <ol>
+          <li>
+            Building testimonies of the restored gospel of Jesus Christ and fostering
+            its principles in a wholesome academic, cultural, and social environment.
+          </li>
+          <li>
+            Providing a high-quality education that prepares students of diverse
+            interests and abilities for lifelong learning and employment.
+          </li>
+          <li>
+            Serving as many students as possible within resource constraints.
+          </li>
+          <li>
+            Delivering education that is affordable for students and the Church.
+          </li>
+        </ol>
+      </div>
+
+      <img
+        class="byui-logo"
+        src="https://wddbyui.github.io/wdd131/images/byui-logo-blue.webp"
+        alt="BYU Idaho logo"
+      />
+    </main>
+  </body>
+</html>
