@@ -1,0 +1,111 @@
+
+<meta name="description" content="An in-depth guide to HTML meta tags.">
+
+<meta name="author" content="Jane Doe">
+
+<style>
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    background: #d3d3d3;
+    color: #1d1d1d;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  #content {
+    width: min(760px, 86%);
+    margin: 42px auto;
+    padding: 24px 20px 38px;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(0, 0, 0, 0.28);
+    text-align: center;
+  }
+
+  h1 {
+    margin: 0 0 18px;
+    font-size: clamp(2.4rem, 4.2vw, 4rem);
+    line-height: 1.1;
+    font-weight: 800;
+    letter-spacing: -0.05em;
+    font-family: Georgia, "Times New Roman", serif;
+  }
+
+  #content > p {
+    margin: 0 auto 18px;
+    max-width: 720px;
+    font-size: clamp(1.15rem, 1.8vw, 1.8rem);
+    line-height: 1.4;
+    color: #1f1f1f;
+    font-weight: 500;
+  }
+
+  hr {
+    width: 100%;
+    height: 3px;
+    margin: 0 auto 18px;
+    border: 0;
+    background: #0b7cb2;
+  }
+
+  img {
+    display: block;
+    width: min(360px, 68%);
+    height: auto;
+    margin: 16px auto 12px;
+  }
+
+  #topics {
+    margin-top: 8px;
+  }
+
+  h2 {
+    margin: 18px 0 10px;
+    font-size: clamp(2rem, 3vw, 3rem);
+    line-height: 1.15;
+    font-weight: 700;
+    font-family: Georgia, "Times New Roman", serif;
+  }
+
+  .list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .list li {
+    max-width: 560px;
+    margin: 0 auto 8px;
+    font-size: clamp(1.05rem, 1.5vw, 1.5rem);
+    line-height: 1.45;
+    font-weight: 400;
+    color: #202020;
+  }
+</style>
+
+<div id="content">
+    <h1>HTML, CSS, and JS</h1>
+    <p>The foundational technologies that power websites and web applications</p>
+    <hr>
+    <img src="https://wddbyui.github.io/wdd131/images/trifecta.png" alt="JS, CSS, and HTML logos">
+    <div id="topics">
+        <h2>HyperText Markup Language</h2>
+        <ul class="list">
+            <li>Defines the structure and content of a web page.</li>
+            <li>Without HTML there's nothing for the browser to display.</li>
+        </ul>
+        <h2>Cascading Style Sheets</h2>
+        <ul class="list">
+            <li>Controls how the HTML elements look.</li>
+            <li>Without CSS pages look plain and unstyled.</li>
+        </ul>
+        <h2>JavaScript</h2>
+        <ul class="list">
+            <li>Adds interactivity and dynamic behavior.</li>
+            <li>Without JavaScript nothing on the page responds dynamically to user actions.</li>
+        </ul>
+    </div>
+</div>
+                    
