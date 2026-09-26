@@ -97,9 +97,31 @@
         width: min(240px, 50vw);
         margin: 26px auto 0;
       }
+      .dark {
+        --page-bg: #1a1a1a;
+        --panel-bg: #2d2d2d;
+        --border: rgba(255, 255, 255, 0.25);
+        --text: #f1f1f1;
+        --blue: #4ea8de;
+      }
+      
+      .theme-switch {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        padding: 10px 15px;
+        cursor: pointer;
+        background-color: var(--blue);
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: bold;
+      }
     </style>
   </head>
   <body>
+    <button class="theme-switch" id="themeToggle">Toggle Dark Mode</button>
     <main class="page">
       <h1>MISSION STATEMENT</h1>
       <div class="subtitle">Brigham Young University-Idaho</div>
@@ -138,5 +160,18 @@
         alt="BYU Idaho logo"
       />
     </main>
+    <script>
+      const toggleBtn = document.getElementById('themeToggle');
+      const body = document.body;
+    
+      toggleBtn.addEventListener('click', () => {
+        body.classList.toggle('dark');
+        if (body.classList.contains('dark')) {
+          toggleBtn.textContent = 'Toggle Light Mode';
+        } else {
+          toggleBtn.textContent = 'Toggle Dark Mode';
+        }
+      });
+    </script>
   </body>
 </html>
