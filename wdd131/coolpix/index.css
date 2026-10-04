@@ -1,0 +1,151 @@
+/* ---------- Mobile first (default) ---------- */
+:root {
+    --primary: #52489c;
+    --secondary: #4062bb;
+    --light: #ebebeb;
+    --text: #1f1f2e;
+    --font: Mandali, Arial, Helvetica, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: var(--font);
+    color: var(--text);
+    background-color: var(--light);
+    line-height: 1.5;
+}
+
+/* Header and menu */
+header {
+    background-color: var(--primary);
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+header h1 {
+    margin: 0 0 0.75rem;
+    font-size: 2rem;
+}
+
+#menu-button {
+    background-color: var(--secondary);
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 6px;
+    padding: 0.5rem 1.25rem;
+    font-family: inherit;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+/* Navigation links are hidden on mobile */
+nav {
+    display: none;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+nav a:hover,
+nav a:focus {
+    text-decoration: underline;
+}
+
+/* Main and gallery */
+main {
+    padding: 1rem;
+}
+
+main h2 {
+    text-align: center;
+    color: var(--primary);
+}
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.gallery img {
+    width: 300px;
+    height: 300px;
+    max-width: 100%;
+    object-fit: cover;
+    border: 4px solid #fff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary);
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* ---------- Medium screens: 700px and up ---------- */
+@media (min-width: 700px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2rem;
+    }
+
+    header h1 {
+        margin: 0;
+    }
+
+    /* Menu button disappears; links show in a row */
+    #menu-button {
+        display: none;
+    }
+
+    nav {
+        display: block;
+    }
+
+    nav ul {
+        display: flex;
+        gap: 1.5rem;
+    }
+
+    .gallery {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+/* ---------- Large screens: 1000px and up ---------- */
+@media (min-width: 1000px) {
+    main {
+        max-width: 1100px;
+        margin: 0 auto;
+    }
+
+    .gallery {
+        gap: 1.5rem;
+    }
+}
