@@ -7,12 +7,13 @@
     <meta name="author" content="Jacob Mumford">
     <title>Cool Pics</title>
     <link rel="stylesheet" href="index.css">
+    <script src="index.js" defer></script>
 </head>
 <body>
     <header>
         <h1>📷 Cool Pics</h1>
-        <button id="menu-button" type="button" aria-label="Toggle navigation menu">Menu</button>
-        <nav>
+        <button id="menu-button" type="button" aria-label="Toggle navigation menu" aria-controls="site-navigation" aria-expanded="false">Menu</button>
+        <nav id="site-navigation">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="#gallery">Gallery</a></li>
@@ -32,6 +33,10 @@
             <img src="https://wddbyui.github.io/wdd131/images/norris-sm.jpg" alt="Norris Glacier and mountains">
             <img src="https://wddbyui.github.io/wdd131/images/norris-sm.jpg" alt="Norris Glacier and mountains">
         </section>
+        <dialog id="image-viewer" aria-label="Image preview">
+            <button class="close-viewer" type="button" aria-label="Close image preview">&times;</button>
+            <img alt="">
+        </dialog>
     </main>
 
     <footer>

@@ -43,9 +43,13 @@ header h1 {
     cursor: pointer;
 }
 
-/* Navigation links are hidden on mobile */
+/* Navigation links are hidden until the mobile menu is opened */
 nav {
     display: none;
+}
+
+nav.menu-open {
+    display: block;
 }
 
 nav ul {
@@ -55,6 +59,8 @@ nav ul {
 }
 
 nav a {
+    display: block;
+    padding: 0.5rem;
     color: #fff;
     text-decoration: none;
     font-size: 1.1rem;
@@ -89,6 +95,40 @@ main h2 {
     object-fit: cover;
     border: 4px solid #fff;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+#image-viewer {
+    position: fixed;
+    max-width: min(90vw, 1100px);
+    max-height: 90vh;
+    padding: 3rem 1rem 1rem;
+    border: 0;
+    background: #fff;
+}
+
+#image-viewer::backdrop {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+#image-viewer img {
+    display: block;
+    max-width: 100%;
+    max-height: 75vh;
+    object-fit: contain;
+}
+
+.close-viewer {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.75rem;
+    padding: 0.25rem 0.5rem;
+    border: 0;
+    background: transparent;
+    color: var(--text);
+    font-size: 2rem;
+    line-height: 1;
+    cursor: pointer;
 }
 
 /* Footer */
@@ -117,7 +157,26 @@ footer p {
         margin: 0;
     }
 
-    /* Menu button disappears; links show in a row */
+    .gallery {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+/* ---------- Large screens: 1000px and up ---------- */
+@media (min-width: 1000px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2rem;
+    }
+
+    header h1 {
+        margin: 0;
+    }
+
     #menu-button {
         display: none;
     }
@@ -131,15 +190,6 @@ footer p {
         gap: 1.5rem;
     }
 
-    .gallery {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-}
-
-/* ---------- Large screens: 1000px and up ---------- */
-@media (min-width: 1000px) {
     main {
         max-width: 1100px;
         margin: 0 auto;
