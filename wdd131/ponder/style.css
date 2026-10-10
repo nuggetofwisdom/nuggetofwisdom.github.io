@@ -95,10 +95,19 @@ section {
     margin: 1em;
     border: 1px solid #ccc;
 }
-nav a {
-    padding: 20px;
-    color: black;
+nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.hidden {
     display: none;
+}
+
+nav a {
+    padding: 12px 20px;
+    color: black;
+    display: block;
 }
 nav a:hover {
     text-decoration: none;
@@ -108,6 +117,20 @@ nav a:hover {
     cursor: pointer;
     border: none;
     background-color: transparent;
+}
+.menu-btn .bar1,
+.menu-btn .bar2,
+.menu-btn .bar3 {
+    transition: transform 180ms ease, opacity 180ms ease;
+}
+.menu-btn.is-open .bar1 {
+    transform: translateY(9px) rotate(45deg);
+}
+.menu-btn.is-open .bar2 {
+    opacity: 0;
+}
+.menu-btn.is-open .bar3 {
+    transform: translateY(-9px) rotate(-45deg);
 }
 .bar1, .bar2, .bar3 {
     width: 30px;

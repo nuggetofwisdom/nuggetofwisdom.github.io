@@ -30,12 +30,20 @@ console.log(course); //works fine, course is global
 console.log(typeof student); // "undefined": student is inaccessible outside the block
                     
 const gallery = document.querySelector('.gallery');
+const menuButton = document.querySelector('.menu-btn');
+const nav = document.querySelector('#main-nav');
 const modal = document.querySelector('dialog');
 const modalImg = modal.querySelector('img');
 const closeBtn = modal.querySelector('.close-viewer');
 
 // open the modal when something in the gallery is clicked
 gallery.addEventListener('click', openModal);
+
+menuButton.addEventListener('click', () => {
+    const isOpen = !nav.classList.toggle('hidden');
+    menuButton.classList.toggle('is-open', isOpen);
+    menuButton.setAttribute('aria-expanded', isOpen);
+});
 
 function openModal(e) {
     // ignore clicks on the empty space between pictures
