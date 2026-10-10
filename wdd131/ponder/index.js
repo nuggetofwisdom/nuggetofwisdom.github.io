@@ -41,7 +41,7 @@ function openModal(e) {
     // ignore clicks on the empty space between pictures
     if (e.target.tagName !== 'IMG') return;
 
-    modalImg.src = e.target.src;
+    modalImg.src = e.target.src.replace("-sm.jpg", "-full.jpg");
     modalImg.alt = e.target.alt;
     modal.showModal();
 }
