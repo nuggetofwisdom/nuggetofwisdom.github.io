@@ -119,18 +119,25 @@ footer {
     text-align: center;
 }
 .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr));
     max-width: 1000px;
     margin: 0 auto;
+    justify-items: center;
+    gap: 1rem;
 }
 
 .gallery figure {
     display: flex;
+    width: 100%;
+    margin: 0;
     justify-content: center;
 }
 
 figure img {
     display: block;
     width: 250px;
+    max-width: 100%;
     height: 250px;
     margin: 0 auto;
     padding: 5px;
@@ -160,20 +167,8 @@ dialog img {
     font-size: 1.5em;
 }
 
-/* tablet: 2 columns */
-@media screen and (min-width: 700px) {
-    .gallery {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
-}
-
-/* desktop: 3 columns, smaller modal image */
+/* desktop: smaller modal image */
 @media screen and (min-width: 1000px) {
-    .gallery {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-
     dialog img {
         width: 60%;
         margin: 15vh auto;
