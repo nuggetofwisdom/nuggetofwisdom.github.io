@@ -1,14 +1,13 @@
 :root {
-    --primary: #1f3b5c;      /* deep navy */
-    --accent: #a8431b;       /* burnt orange (4.5:1+ on light bg) */
-    --bg: #f7f4ee;           /* warm paper */
-    --surface: #ffffff;
-    --text: #222222;
-    --muted: #555555;
-    --border: #d8d2c4;
+    --heading-color: #3b1f3a;
+    --accent: #b0002e;
+    --line: #f2c98b;
+    --star: #946c00;
+    --text: #000000;
+    --bg: #ffffff;
 
-    --heading-font: "Merriweather", Georgia, serif;
-    --body-font: "Open Sans", Arial, sans-serif;
+    --heading-font: "Lora", Georgia, serif;
+    --body-font: Arial, Helvetica, sans-serif;
 }
 
 *,
@@ -18,15 +17,12 @@
 }
 
 body {
-    margin: 0;
+    margin: 0 auto;
+    max-width: 1100px;
     font-family: var(--body-font);
-    font-size: 1rem;
-    line-height: 1.6;
     color: var(--text);
     background-color: var(--bg);
-    min-height: 100vh;
-    display: grid;
-    grid-template-rows: auto 1fr auto;
+    padding: 0 0.5rem;
 }
 
 img {
@@ -35,35 +31,19 @@ img {
     display: block;
 }
 
-h1,
-h2,
-h3 {
-    font-family: var(--heading-font);
-    line-height: 1.25;
-}
-
 a {
     color: var(--accent);
+    text-decoration: none;
+}
+
+a:hover,
+a:focus-visible {
+    text-decoration: underline;
 }
 
 a:focus-visible {
-    outline: 3px solid var(--accent);
+    outline: 2px solid var(--accent);
     outline-offset: 2px;
-}
-
-/* ---------- Accessibility helpers ---------- */
-.skip-link {
-    position: absolute;
-    left: 1rem;
-    top: -3rem;
-    padding: 0.5rem 1rem;
-    background: var(--surface);
-    color: var(--primary);
-    z-index: 10;
-}
-
-.skip-link:focus {
-    top: 1rem;
 }
 
 .visually-hidden {
@@ -75,192 +55,102 @@ a:focus-visible {
     white-space: nowrap;
 }
 
-/* ---------- Header ---------- */
-.site-header {
-    background-color: var(--primary);
-    color: #ffffff;
-    padding: 1rem;
-    display: grid;
-    gap: 0.5rem;
-    justify-items: center;
-    text-align: center;
-}
-
-.site-header h1 {
+header h1 {
     margin: 0;
+    padding: 1.25rem 0;
+    text-align: center;
+    font-family: var(--heading-font);
+    color: var(--heading-color);
     font-size: 1.75rem;
+    border-bottom: 1px solid var(--line);
 }
 
-.site-header ul {
+nav {
+    border-bottom: 1px solid var(--line);
+}
+
+nav ul {
     list-style: none;
     margin: 0;
-    padding: 0;
+    padding: 1rem 2rem;
     display: grid;
     grid-auto-flow: column;
-    gap: 1.5rem;
+    justify-content: end;
+    gap: 2.5rem;
 }
 
-.site-header a {
-    color: #ffffff;
-    text-decoration: none;
-    font-weight: 600;
-    padding: 0.25rem 0;
-    border-bottom: 2px solid transparent;
-}
-
-.site-header a:hover,
-.site-header a[aria-current="page"] {
-    border-bottom-color: #f2b38f;
-}
-
-.site-header a:focus-visible {
-    outline-color: #ffffff;
-}
-
-/* ---------- Main ---------- */
 main {
-    width: 100%;
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 1rem;
+    padding: 1.5rem 2rem;
 }
 
-.page-heading {
-    color: var(--primary);
-    border-bottom: 2px solid var(--border);
-    padding-bottom: 0.5rem;
-}
-
-/* ---------- Book card (mobile first: one column) ---------- */
 .book {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-areas:
-        "details"
-        "content";
-    gap: 1rem;
-    background-color: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: 8px;
-    padding: 1rem;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+    gap: 1.5rem;
 }
 
 .book-details {
-    grid-area: details;
+    text-align: right;
 }
 
-.book-details dl {
-    margin: 0;
-    display: grid;
-    grid-template-columns: auto 1fr;
-    gap: 0.25rem 1rem;
+.book-details p {
+    margin: 0 0 0.75rem;
 }
 
-.book-details dt {
-    font-weight: 600;
-    color: var(--primary);
-}
-
-.book-details dd {
-    margin: 0;
-}
-
-.book-content {
-    grid-area: content;
-    display: grid;
-    gap: 0.75rem;
-    justify-items: start;
-}
-
-.book-content h3 {
-    margin: 0;
-    font-size: 1.5rem;
-    color: var(--primary);
-}
-
-.book-content .author {
-    margin: 0;
-    color: var(--muted);
+.book-details .date {
     font-style: italic;
 }
 
+.rating {
+    color: var(--star);
+    letter-spacing: 0.1em;
+}
+
+.book-content h2 {
+    margin: 0 0 1rem;
+    font-family: var(--heading-font);
+    color: var(--accent);
+    font-size: 1.4rem;
+}
+
 .book-content img {
-    justify-self: center;
-    border-radius: 4px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    margin: 0 auto 1rem;
 }
 
 .book-content p {
     margin: 0;
+    max-width: 40ch;
 }
 
-.read-more {
-    font-weight: 600;
-}
-
-/* ---------- Footer ---------- */
-.site-footer {
-    background-color: var(--primary);
-    color: #ffffff;
+footer {
+    border-top: 1px solid var(--line);
     text-align: center;
-    padding: 1rem;
+    padding: 0.75rem 0;
 }
 
-.site-footer p {
-    margin: 0.25rem 0;
+footer p {
+    margin: 0;
 }
 
-/* ---------- Tablet: details sidebar + content ---------- */
-@media (min-width: 600px) {
-    .site-header {
-        grid-template-columns: 1fr auto;
-        justify-items: start;
-        align-items: center;
-        text-align: left;
-        padding: 1rem 2rem;
-    }
-
+@media (min-width: 700px) {
     .book {
-        grid-template-columns: 180px 1fr;
-        grid-template-areas: "details content";
-        gap: 1.5rem;
-        padding: 1.5rem;
+        grid-template-columns: 1fr 2fr;
+        gap: 0;
     }
 
     .book-details {
-        border-right: 1px solid var(--border);
-        padding-right: 1rem;
-        text-align: right;
+        border-right: 1px solid var(--line);
+        padding-right: 1.5rem;
+        font-size: 0.85rem;
     }
 
-    /* stack each label above its value in the narrow sidebar */
-    .book-details dl {
-        grid-template-columns: 1fr;
-    }
-
-    .book-details dd {
-        margin-bottom: 0.75rem;
-    }
-}
-
-/* ---------- Desktop: image beside the description ---------- */
-@media (min-width: 900px) {
     .book-content {
-        grid-template-columns: 200px 1fr;
-        grid-template-areas:
-            "title  title"
-            "author author"
-            "image  text"
-            "image  more";
-        grid-template-rows: auto auto auto 1fr;
-        column-gap: 1.5rem;
-        align-items: start;
+        padding-left: 1.5rem;
+        max-width: 420px;
     }
 
-    .book-content h3 { grid-area: title; }
-    .book-content .author { grid-area: author; }
-    .book-content img { grid-area: image; }
-    .book-content > p:not(.author) { grid-area: text; }
-    .book-content .read-more { grid-area: more; }
+    .book-content p {
+        max-width: none;
+        font-size: 0.9rem;
+    }
 }

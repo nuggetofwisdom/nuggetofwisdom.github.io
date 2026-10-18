@@ -3,63 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Jacob's Book Blog - reviews and recommendations for great reads.">
+    <meta name="description" content="Kids Read For Fun - book reviews and recommendations for young readers.">
     <meta name="author" content="Jacob Mumford">
-    <title>Book Blog</title>
+    <title>Kids Read For Fun</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <a class="skip-link" href="#main">Skip to main content</a>
-
-    <header class="site-header">
-        <h1>📚 Jacob's Book Blog</h1>
+    <header>
+        <h1>Kids Read For Fun</h1>
         <nav aria-label="Main navigation">
             <ul>
-                <li><a href="index.html" aria-current="page">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Archive</a></li>
+                <li><a href="#">Search</a></li>
             </ul>
         </nav>
     </header>
 
-    <main id="main">
-        <h2 class="page-heading">Latest Reviews</h2>
-
+    <main>
         <article class="book">
             <aside class="book-details" aria-label="Book details">
-                <dl>
-                    <dt>Date</dt>
-                    <dd><time datetime="2026-10-17">October 17, 2026</time></dd>
-
-                    <dt>Ages</dt>
-                    <dd>10&ndash;14</dd>
-
-                    <dt>Genre</dt>
-                    <dd>Fantasy</dd>
-
-                    <dt>Rating</dt>
-                    <dd><span role="img" aria-label="Rating: 4 out of 5 stars">⭐⭐⭐⭐</span></dd>
-                </dl>
+                <p class="date"><time datetime="2022-07-05">July 5, 2022</time></p>
+                <p><span class="visually-hidden">Ages </span>10-14</p>
+                <p><span class="visually-hidden">Genre: </span>Fantasy</p>
+                <p class="rating" role="img" aria-label="Rating: 4 out of 5 stars">&#9733;&#9733;&#9733;&#9733;</p>
             </aside>
 
             <div class="book-content">
-                <h3>Septimus Heap Book One: Magyk</h3>
-                <p class="author">by Angie Sage</p>
+                <h2>Septimus Heap Book One: Magyk</h2>
                 <img src="https://upload.wikimedia.org/wikipedia/en/5/5f/Magkycover2.jpg"
-                     alt="Book cover of Septimus Heap: Magyk showing a young boy in a green cloak holding a glowing light"
-                     width="200" height="300">
-                <p>If you enjoy stories about seventh sons of seventh sons and magyk, this is the book for you. On the night Septimus Heap is born, he is whisked away by a midwife and declared dead &mdash; the same night his father finds a mysterious baby girl in the snow. Ten years later, a young apprentice, a reluctant princess, and a powerful ExtraOrdinary Wizard are pulled into an adventure full of charms, spells, and secrets.</p>
-                <a class="read-more" href="https://en.wikipedia.org/wiki/Magyk">Read more<span class="visually-hidden"> about Magyk on Wikipedia</span></a>
+                     alt="Cover of Septimus Heap Book One: Magyk by Angie Sage"
+                     width="150" height="200">
+                <p>If you enjoy stories about seventh sons of seventh sons and magyk this is the book for you.</p>
             </div>
         </article>
     </main>
 
-    <footer class="site-footer">
-        <p id="about">A static review page for WDD 131 &ndash; more books coming soon.</p>
-        <p id="contact">&copy; 2026 Jacob Mumford</p>
+    <footer>
+        <p>Jacob Mumford</p>
     </footer>
 </body>
 </html>
