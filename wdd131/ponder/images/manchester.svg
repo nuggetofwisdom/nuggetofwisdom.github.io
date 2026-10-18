@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-labelledby="t">
+  <title id="t">Illustration of a quiet New England harbor in winter with fishing boats</title>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#5b6b7d"/>
+      <stop offset="1" stop-color="#c9ced3"/>
+    </linearGradient>
+    <linearGradient id="sea" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#4a5d6e"/>
+      <stop offset="1" stop-color="#22313d"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#sky)"/>
+  <circle cx="610" cy="120" r="38" fill="#e7e4dc" opacity="0.6"/>
+  <!-- far hills with snow -->
+  <path d="M0 250 Q120 200 240 235 T480 225 T800 240 V290 H0Z" fill="#7d8a94"/>
+  <path d="M0 262 Q150 235 300 255 T600 250 T800 258 V290 H0Z" fill="#e9ecee"/>
+  <!-- houses -->
+  <g fill="#3b3f45">
+    <rect x="90" y="225" width="40" height="35"/><path d="M85 228 L110 205 L135 228Z"/>
+    <rect x="150" y="232" width="34" height="28"/><path d="M146 234 L167 214 L188 234Z"/>
+    <rect x="520" y="228" width="44" height="32"/><path d="M515 230 L542 207 L569 230Z"/>
+    <rect x="640" y="215" width="12" height="45"/><path d="M636 217 L646 185 L656 217Z"/>
+  </g>
+  <g fill="#f3d27a"><rect x="100" y="238" width="8" height="8"/><rect x="532" y="240" width="8" height="8"/></g>
+  <!-- sea -->
+  <rect y="290" width="800" height="160" fill="url(#sea)"/>
+  <g stroke="#8fa1ae" stroke-width="2" opacity="0.5">
+    <line x1="60" y1="320" x2="140" y2="320"/><line x1="420" y1="340" x2="520" y2="340"/>
+    <line x1="250" y1="380" x2="330" y2="380"/><line x1="620" y1="400" x2="720" y2="400"/>
+  </g>
+  <!-- dock -->
+  <rect x="0" y="300" width="230" height="12" fill="#4b3a2c"/>
+  <g fill="#3a2c21"><rect x="20" y="300" width="8" height="60"/><rect x="110" y="300" width="8" height="60"/><rect x="200" y="300" width="8" height="60"/></g>
+  <!-- fishing boat -->
+  <path d="M300 330 H470 L450 362 H320Z" fill="#e8e6e1"/>
+  <rect x="380" y="300" width="50" height="30" fill="#d7d3cb"/>
+  <rect x="388" y="308" width="12" height="10" fill="#4a5d6e"/>
+  <line x1="350" y1="330" x2="350" y2="270" stroke="#2a2a2a" stroke-width="3"/>
+  <line x1="350" y1="275" x2="300" y2="325" stroke="#2a2a2a" stroke-width="1.5"/>
+  <path d="M320 362 H450" stroke="#1d5a8c" stroke-width="4"/>
+  <!-- small boat -->
+  <path d="M560 380 H650 L638 398 H572Z" fill="#9b3b2e"/>
+  <line x1="605" y1="380" x2="605" y2="345" stroke="#2a2a2a" stroke-width="2"/>
+  <!-- reflections -->
+  <g fill="#e8e6e1" opacity="0.15"><rect x="320" y="366" width="130" height="6"/><rect x="330" y="378" width="110" height="4"/></g>
+  <!-- snowfall -->
+  <g fill="#fff" opacity="0.8">
+    <circle cx="50" cy="60" r="2"/><circle cx="180" cy="110" r="2.5"/><circle cx="300" cy="40" r="2"/>
+    <circle cx="420" cy="150" r="2"/><circle cx="520" cy="70" r="2.5"/><circle cx="700" cy="50" r="2"/>
+    <circle cx="760" cy="160" r="2"/><circle cx="250" cy="190" r="2"/><circle cx="90" cy="170" r="2.5"/>
+    <circle cx="640" cy="260" r="2"/><circle cx="380" cy="250" r="2"/>
+  </g>
+</svg>

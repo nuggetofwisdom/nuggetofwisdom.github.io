@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-labelledby="t">
+  <title id="t">Illustration of a small Ohio town at dawn with a county courthouse and an empty two-lane road</title>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#38507a"/>
+      <stop offset="0.6" stop-color="#d98e5f"/>
+      <stop offset="1" stop-color="#f3c98b"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#sky)"/>
+  <circle cx="160" cy="250" r="45" fill="#fbe2a6" opacity="0.85"/>
+  <!-- fields -->
+  <path d="M0 265 Q200 245 400 260 T800 255 V450 H0Z" fill="#6f7f45"/>
+  <path d="M0 300 Q250 285 500 300 T800 295 V450 H0Z" fill="#596a37"/>
+  <!-- courthouse -->
+  <g fill="#3c3530">
+    <rect x="470" y="190" width="180" height="85"/>
+    <path d="M460 192 L560 160 L660 192Z"/>
+    <rect x="535" y="110" width="50" height="55"/>
+    <path d="M530 112 L560 80 L590 112Z"/>
+    <rect x="557" y="62" width="6" height="20"/>
+  </g>
+  <circle cx="560" cy="135" r="12" fill="#efe2c4"/>
+  <line x1="560" y1="135" x2="560" y2="127" stroke="#3c3530" stroke-width="2"/>
+  <line x1="560" y1="135" x2="566" y2="138" stroke="#3c3530" stroke-width="2"/>
+  <g fill="#f6cf7d">
+    <rect x="490" y="210" width="14" height="22"/><rect x="520" y="210" width="14" height="22"/>
+    <rect x="586" y="210" width="14" height="22"/><rect x="616" y="210" width="14" height="22"/>
+  </g>
+  <rect x="548" y="235" width="24" height="40" fill="#22201d"/>
+  <!-- grain elevator & water tower -->
+  <g fill="#4a423b">
+    <rect x="290" y="170" width="26" height="100"/><rect x="318" y="185" width="26" height="85"/>
+    <path d="M288 172 L303 155 L318 172Z"/>
+    <rect x="720" y="160" width="40" height="28" rx="12"/>
+    <rect x="726" y="188" width="4" height="80"/><rect x="750" y="188" width="4" height="80"/>
+  </g>
+  <!-- road -->
+  <path d="M330 450 L430 275 L450 275 L560 450Z" fill="#3a3a3c"/>
+  <g fill="#f0d36a">
+    <path d="M437 290 L443 290 L445 305 L435 305Z"/>
+    <path d="M433 325 L447 325 L450 350 L430 350Z"/>
+    <path d="M428 380 L452 380 L457 420 L423 420Z"/>
+  </g>
+  <!-- power line -->
+  <g stroke="#2b2622" stroke-width="3">
+    <line x1="230" y1="200" x2="230" y2="330"/><line x1="215" y1="210" x2="245" y2="210"/>
+    <line x1="80" y1="190" x2="80" y2="360"/><line x1="65" y1="200" x2="95" y2="200"/>
+  </g>
+  <path d="M80 200 Q155 225 230 210 Q330 225 430 275" fill="none" stroke="#2b2622" stroke-width="1.2"/>
+  <!-- fence -->
+  <g stroke="#3d3428" stroke-width="3">
+    <line x1="600" y1="340" x2="800" y2="330"/><line x1="600" y1="360" x2="800" y2="352"/>
+    <line x1="620" y1="330" x2="620" y2="372"/><line x1="680" y1="327" x2="680" y2="369"/>
+    <line x1="740" y1="324" x2="740" y2="366"/>
+  </g>
+</svg>
