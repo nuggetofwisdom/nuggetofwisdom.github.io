@@ -1,0 +1,84 @@
+body {
+  font-family: "Palatino Linotype", Palatino, serif;
+  background: #f0f4f8;
+  margin: 0;
+}
+
+.card {
+  background: #313131;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.9);
+  width: 400px;
+  max-width: 100%;
+  margin: 100px auto;
+  overflow: hidden;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 15px 15px 0 0;
+}
+
+.name {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 0 0 20px 0;
+  color: white;
+  padding: 15px 0 15px 35px;
+  background-color: #5d747b;
+}
+
+.stats {
+  margin: 10px 15px 7px 35px;
+  text-align: left;
+}
+
+.stats p {
+  margin: 5px 0;
+  color: #f0f4f8;
+}
+
+.buttons {
+  text-align: center;
+}
+
+button {
+  padding: 8px 12px;
+  margin: 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: #4a5d63; /* darkened slightly for contrast (Lighthouse accessibility) */
+  color: white;
+  font-weight: bold;
+  font-family: inherit;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+}
+
+button:hover,
+button:focus-visible {
+  background-color: #58605a;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.log {
+  min-height: 1.5em;
+  margin: 0 15px 20px;
+  text-align: center;
+  color: #f0f4f8;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
