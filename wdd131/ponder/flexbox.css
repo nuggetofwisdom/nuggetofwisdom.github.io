@@ -1,0 +1,91 @@
+/* ---------- Starter styles ---------- */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 20px;
+  max-width: 1280px;
+  margin: auto;
+  padding: 1em;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.main-nav {
+  list-style-type: none;
+}
+
+hr {
+  margin-top: 50px;
+}
+
+/* ---------- Mobile first (small screens) ---------- */
+
+/* Nav links in a row, pushed to the right */
+.main-nav {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 0;
+}
+
+/* Cards stack vertically on mobile: image on top, text below */
+.media-card {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1em;
+}
+
+.media-card-image img {
+  width: 100%;
+}
+
+/* ---------- Larger devices ---------- */
+@media (min-width: 700px) {
+
+  /* Image and text side by side */
+  .media-card {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  /* Single media card: large image */
+  .media-card-container .media-card-image {
+    flex: 0 0 40%;
+  }
+
+  .media-card-container .media-card-content {
+    flex: 1;
+    max-width: 500px;
+  }
+
+  .media-card-content h3 {
+    margin-top: 0.5em;
+  }
+
+  /* Gallery: cards wrap into two columns */
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 50px;
+  }
+
+  .gallery .media-card {
+    flex: 1 1 calc(50% - 50px);
+  }
+
+  /* Gallery cards get small thumbnails */
+  .gallery .media-card-image {
+    flex: 0 0 30%;
+  }
+
+  .gallery .media-card-content {
+    flex: 1;
+  }
+}
